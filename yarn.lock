@@ -3461,6 +3461,13 @@ react-dom@^16.4.2:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-mixin@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.taobao.org/react-mixin/download/react-mixin-4.0.0.tgz#a19701338301c8bd06a864cb52520c7926d77cc9"
+  dependencies:
+    object-assign "^4.0.1"
+    smart-mixin "^2.0.0"
+
 react@^16.4.2:
   version "16.4.2"
   resolved "http://registry.npm.taobao.org/react/download/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
@@ -3819,6 +3826,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 slash@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/slash/download/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+smart-mixin@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/smart-mixin/download/smart-mixin-2.0.0.tgz#a34a1055e32a75b30d2b4e3ca323dc99cb53f437"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MyBodyChild from './MyBodyChild';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+
+import MixinLog from './mixins';
+import ReactMixin from 'react-mixin';
 
 const defaultProps = {
     username:"这是一个默认的用户名"
@@ -21,6 +24,7 @@ export default class MyBody extends React.Component{
         console.log(this.refs.submitButton)
         this.refs.submitButton.style.color = 'red';
 
+        MixinLog.log();
     }
     handleChildValueChange(event){
         this.setState({age:event.target.value})
@@ -49,3 +53,5 @@ MyBody.defaultProps = defaultProps;
 MyBody.propTypes = {
     userid: PropTypes.number
 };
+
+ReactMixin(MyBody.prototype, MixinLog);

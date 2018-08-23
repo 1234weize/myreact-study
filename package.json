@@ -12,6 +12,7 @@
     "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-mixin": "^4.0.0",
     "webpack": "^4.17.0",
     "webpack-dev-server": "^3.1.5"
   },
