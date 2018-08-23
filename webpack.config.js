@@ -14,7 +14,7 @@ module.exports = {
     path: path.resolve('dist'),
     filename: 'index_bundle.js'
   },
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       { test: /\.css$/,
