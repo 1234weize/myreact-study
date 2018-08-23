@@ -14,6 +14,13 @@ export default class MyBody extends React.Component{
     }
     changeUserInfo(){
         this.setState({age:50});
+        //第一种方式
+        // var mySubmitBotton = document.getElementById('submitButton');
+        // ReactDOM.findDOMNode(mySubmitBotton).style.color='red';
+        //第二种方式
+        console.log(this.refs.submitButton)
+        this.refs.submitButton.style.color = 'red';
+
     }
     handleChildValueChange(event){
         this.setState({age:event.target.value})
@@ -30,7 +37,7 @@ export default class MyBody extends React.Component{
                 <h1>这是Body，存放内容</h1>
                 <p>接收到的父页面的属性：userid:{this.props.userid} {this.props.username}</p>
                 <p>{this.state.age}</p>
-                <input type="button" value="提交" onClick={this.changeUserInfo.bind(this)}/>
+                <input id="submitButton" ref="submitButton" type="button" value="提交" onClick={this.changeUserInfo.bind(this)}/>
                 <MyBodyChild {...this.props} id='abcd' handleChildValueChange={this.handleChildValueChange.bind(this)}/>
             </div>
         )
