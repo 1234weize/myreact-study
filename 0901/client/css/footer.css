@@ -1,11 +1,12 @@
-.miniFooter{
-    background-color: #333333;
-    color: #ffffff;
-    padding-left: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.miniFooter h1{
-    font-size: 15px;
-}
+{
+    "miniFooter": {
+      "backgroundColor": "#333333",
+      "color": "#ffffff",
+      "paddingLeft": "20px",
+      "paddingTop": "3px",
+      "paddingBottom": "3px"
+    },
+    "miniFooter_h1": {
+      "fontSize": "15px"
+    }
+  }
