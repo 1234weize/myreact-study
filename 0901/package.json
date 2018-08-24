@@ -7,12 +7,15 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-mixin": "^4.0.0",
+    "style-loader": "^0.22.1",
     "webpack": "^4.17.0",
     "webpack-dev-server": "^3.1.5"
   },
