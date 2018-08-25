@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MyBodyChild from './MyBodyChild';
 import PropTypes from 'prop-types';
-
+import {input, Input} from 'antd';
 import MixinLog from './mixins';
 import ReactMixin from 'react-mixin';
 const defaultProps={
@@ -19,7 +19,7 @@ export default class MyBody extends React.Component{
         // var mySubmitButton=document.getElementById('submitButton');
         // ReactDOM.findDOMNode(mySubmitButton).style.color='red';
         //第二种方式
-        this.refs.submitButton.style.color='red';
+        // this.refs.submitButton.style.color='red';
 
         MixinLog.log();
     };
@@ -40,7 +40,8 @@ export default class MyBody extends React.Component{
                 <h1>这是Body，存放内容</h1>
                <p>接收到的父页面属性，userid:{this.props.userid} username:{this.props.username}</p>
                 <p>{this.state.age}</p>
-                <input type="button" id="submitButton" ref="submitButton" value="提交" onClick={this.changeUserInfo.bind(this)}/>
+                <Input placeholder="Basic usage" />
+                <Input type="button" id="submitButton" ref="submitButton" value="提交" onClick={this.changeUserInfo.bind(this)}/>
                 <MyBodyChild {...this.props} id={4} handleChildValueChange={this.handleChildValueChange.bind(this)}/>
             </div>
         )

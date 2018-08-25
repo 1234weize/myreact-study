@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import MyHeader from './components/MyHeader';
 import MyFooter from './components/MyFooter';
 import MyBody from './components/MyBody';
-
+import 'antd/dist/antd.css';
 
 class Index extends React.Component{
     render(){
